@@ -33,11 +33,22 @@ int main()
     d1.SetDate(2, 30, 2022);
     cout << d1.NumberString() << endl;
     */
-
+    /*
     Date d1(12, 25, 2021);
     cout << d1.NumberString() << endl;
     cout << d1.LongString() << endl;
     cout << d1.InternString() << endl;
+    */
+
+    cout << "Constructor Test\n";
+    Date d1; 
+    cout << d1.NumberString() << endl;
+    
+    Date d2(12, 25, 2021); 
+    cout << d2.NumberString() << endl;
+
+    Date d3(2, 30, 2021);
+    cout << d3.NumberString() << endl; //Should be invalid
 
     cout << "Program complete\n";
 
