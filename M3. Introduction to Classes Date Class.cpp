@@ -26,6 +26,13 @@ int main()
     Date InvalidDate(2, 30, 2021);
     cout << InvalidDate.NumberString() << endl;
 
+    Date d1(5, 10, 2022);
+    cout << d1.NumberString() << endl;
+
+    //Invalid temp
+    d1.SetDate(2, 30, 2022);
+    cout << d1.NumberString() << endl;
+
     cout << "Program complete\n";
 
     return 0;

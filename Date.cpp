@@ -34,7 +34,13 @@ Date::Date(int m, int d, int y) {
 
 //Mutator
 void Date::SetDate(int m, int d, int y) {
-	//Temp
+	//Temp onject (automatically is valid)
+	Date Temp(m, d, y);
+
+	//Copies the valid values
+	month = Temp.month;
+	day = Temp.day;
+	year = Temp.year;
 }
 
 //Accessors
