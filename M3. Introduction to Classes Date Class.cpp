@@ -17,7 +17,7 @@ int main()
 
     //Temp Object 
     Date TestDate;
-
+    /*
     cout << TestDate.NumberString() << endl;
 
     Date ValidDate(12, 25, 2021);
@@ -32,6 +32,12 @@ int main()
     //Invalid temp
     d1.SetDate(2, 30, 2022);
     cout << d1.NumberString() << endl;
+    */
+
+    Date d1(12, 25, 2021);
+    cout << d1.NumberString() << endl;
+    cout << d1.LongString() << endl;
+    cout << d1.InternString() << endl;
 
     cout << "Program complete\n";
 

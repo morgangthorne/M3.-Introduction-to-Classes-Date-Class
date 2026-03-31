@@ -100,13 +100,25 @@ int Date::LastDay(int m, int y) const {
 
 //Format for output
 string Date::NumberString() const {
-	return "1/1/1000";
+	
+	return to_string(month) + "/" + to_string(day) + "/" + to_string(year);
+
 }
 
 string Date::LongString() const {
-	return "January 1, 1000";
+	
+	string months[] = { "January", "February", "March", "April",
+						"May", "June", "July", "August",
+						"September", "October", "November", "December" };
+
+	return months[month - 1] + " " + to_string(day) + " " + to_string(year);
 }
 
 string Date::InternString() const {
-	return "1 January 1000";
+	
+	string months[] = { "January", "February", "March", "April",
+						"May", "June", "July", "August",
+						"September", "October", "November", "December" };
+
+	return to_string(day) + " " + months[month - 1] + " " + to_string(year);
 }
