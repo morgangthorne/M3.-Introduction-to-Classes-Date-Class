@@ -10,26 +10,31 @@ Requirements:
 
 //Constructor
 Date::Date(int m, int d, int y) {
+	
+	bool valid = true;
+	
 	//Validation for year 
-	if (y < 1000) {
-		month = 1;
-		day = 1;
-		year = 1000;
-		
-		return;
-	}
-	//Validation for month
-	if (m < 1 || m > 12) {
-		month = 1;
-		day = 1;
-		year = 1000;
+	if (y < 1900)
+		valid = false;
 
-		return;
+	//Validation for month
+	if (m < 1 || m > 12) 
+		valid = false;
+
+	if (d < 1 || d > LastDay(m, y))
+		valid = false;
+
+
+	if (!valid) {
+		month = 1;
+		day = 1;
+		year = 1900;
 	}
-	//If both year and month are valid
-	month = m;
-	day = d;
-	year = y;
+	else {
+		month = m;
+		day = d;
+		year = y;
+	}
 }
 
 //Mutator

@@ -18,12 +18,19 @@ int main()
     //Temp Object 
     Date TestDate;
     
-    cout << "getter test\n";
+    cout << "Edge case test\n";
 
-    Date g1(7, 4, 2022);
-    cout << g1.GetMonth() << endl;
-    cout << g1.GetDay() << endl;
-    cout << g1.GetYear() << endl;
+    Date e1(4, 30, 2023);
+    cout << e1.NumberString() << endl;
+    
+    Date e2(4, 31, 2023);
+    cout << e2.NumberString() << endl;
+
+    Date e3(2, 29, 2023);
+    cout << e3.NumberString() << endl;
+
+    Date e4(2, 29, 2024);
+    cout << e4.NumberString() << endl;
 
     cout << "Program complete\n";
 

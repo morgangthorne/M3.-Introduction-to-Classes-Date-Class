@@ -24,7 +24,7 @@ private:
 
 public:
 	//The constructor
-	Date(int m = 1, int d = 1, int y = 1000);
+	Date(int m = 1, int d = 1, int y = 1900);
 
 	//Mutator
 	void SetDate(int m, int d, int y);
