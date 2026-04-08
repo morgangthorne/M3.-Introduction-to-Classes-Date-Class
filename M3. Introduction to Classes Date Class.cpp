@@ -75,10 +75,10 @@ int main()
 
     Date ly(1, 1, 2024);
     
-    cout << "2024 (leap): " << ly.IsALeapYear() << endl;
-    cout << "2023 (not leap): " << ly.IsALeapYear(2023) << endl;
-    cout << "1900 (not leap): " << ly.IsALeapYear(1900) << endl;
-    cout << "2000 (leap): " << ly.IsALeapYear(2000) << endl;
+    cout << "2024 (leap): " << (ly.IsALeapYear() ? "True" : "False") << endl;
+    cout << "2023 (not leap): " << (ly.IsALeapYear(2023) ? "True" : "False") << endl;
+    cout << "1900 (not leap): " << (ly.IsALeapYear(1900) ? "True" : "False") << endl;
+    cout << "2000 (leap): " << (ly.IsALeapYear(2000) ? "True" : "False") << endl;
 
     //Last Day Test
     cout << "\n------Last Day Tests------\n";
@@ -96,7 +96,7 @@ int main()
     Date e3(6, 30, 2023);
     Date e4(6, 31, 2024);
     Date e5(2, 28, 2023);
-    Date e6(2, 29, 2024);
+    Date e6(5, 29, 2024);
     Date e7(2, 29, 2024);
     Date e8(2, 30, 2024);
     
@@ -130,7 +130,7 @@ int main()
     
     cout << "Month: " << f1.GetMonth() << endl;
     cout << "Day: " << f1.GetDay() << endl;
-    cout << "Year: " << f1.GetDay() << endl;
+    cout << "Year: " << f1.GetYear() << endl;
 
     f1.SetDate(3, 15, 2025);
     
