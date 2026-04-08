@@ -116,7 +116,7 @@ string Date::LongString() const {
 						"May", "June", "July", "August",
 						"September", "October", "November", "December" };
 
-	return months[month - 1] + " " + to_string(day) + " " + to_string(year);
+	return months[month - 1] + " " + to_string(day) + ", " + to_string(year);
 }
 
 string Date::InternString() const {

@@ -32,7 +32,40 @@ int main()
     Date e4(2, 29, 2024);
     cout << e4.NumberString() << endl;
 
-    cout << "Program complete\n";
+    cout << "------Constructor Tests------\n";
+
+    //Default Constructor
+    Date d1;
+    cout << d1.NumberString() << endl;
+    cout << d1.LongString() << endl;
+    cout << d1.InternString() << endl;
+
+    cout << "\nValid Construct Tests\n";
+
+    Date d2(12, 25, 2021);
+    cout << d2.NumberString() << endl;
+    
+    Date d3(1, 1, 1900);
+    cout << d3.NumberString() << endl;
+
+    Date d4(2, 14, 2022);
+    cout << d4.NumberString() << endl;
+
+    cout << "\nInvalid Contruct Test\n";
+
+    Date d5(0, 10, 2020);
+    cout << d5.NumberString() << endl;
+
+    Date d6(13, 10, 2020);
+    cout << d6.NumberString() << endl;
+
+    Date d7(4, 31, 2023);
+    cout << d7.NumberString() << endl;
+
+    Date d8(2, 30, 2023);
+    cout << d8.NumberString() << endl;
+    
+    cout << "\nProgram Complete\n";
 
     return 0;
 }
