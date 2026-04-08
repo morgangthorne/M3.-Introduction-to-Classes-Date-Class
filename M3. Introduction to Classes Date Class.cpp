@@ -74,6 +74,21 @@ int main()
     s1.SetDate(4, 31, 2022); // Should be invalid
     cout << s1.NumberString() << endl;
 
+    cout << "\n------Leap Year Tests------\n";
+
+    Date ly(1, 1, 2024);
+    cout << ly.IsALeapYear() << endl;
+    cout << ly.IsALeapYear(2023) << endl; 
+    cout << ly.IsALeapYear(1900) << endl;
+    cout << ly.IsALeapYear(2000) << endl;
+
+    cout << "\n------Last Day Tests------\n";
+
+    cout << ly.LastDay(1, 2023) << endl; //31
+    cout << ly.LastDay(4, 2023) << endl; //30
+    cout << ly.LastDay(2, 2023) << endl; //28
+    cout << ly.LastDay(2, 2024) << endl; //29
+
     
     cout << "\nProgram Complete\n";
 
