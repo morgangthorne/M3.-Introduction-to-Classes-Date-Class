@@ -64,6 +64,16 @@ int main()
 
     Date d8(2, 30, 2023);
     cout << d8.NumberString() << endl;
+
+    cout << "\n------SetDate Tests------\n";
+
+    Date s1;
+    s1.SetDate(5, 10, 2022);
+    cout << s1.NumberString() << endl;
+
+    s1.SetDate(4, 31, 2022); // Should be invalid
+    cout << s1.NumberString() << endl;
+
     
     cout << "\nProgram Complete\n";
 
